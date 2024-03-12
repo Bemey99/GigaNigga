@@ -184,7 +184,7 @@ return {
         if (Title) or (Description) then -- Check that user has provided title and/or description
             local Y = Title and 26 or 0;
             if (Description) then
-                                local TextSize = TextService:GetTextSize(Description, DescriptionSettings.Size, DescriptionSettings.Font, Vector2.new(MaxWidth, math.huge));
+              local TextSize = TextService:GetTextSize(Description, DescriptionSettings.Size, DescriptionSettings.Font, Vector2.new(MaxWidth, math.huge));
                 for i = 1, math.ceil(TextSize.Y / Container.AbsoluteSize.Y) do
                     Y += TextSize.Y;
                 end
