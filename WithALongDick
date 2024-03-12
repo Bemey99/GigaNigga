@@ -8,11 +8,12 @@ local NotifGui = Instance.new("ScreenGui");
 NotifGui.Name = "AkaliNotif";
 NotifGui.Parent = RunService:IsStudio() and Player.PlayerGui or game:GetService("CoreGui");
 
-local Container = Instance.new("Frame");
+local Container = Instance.new("Frame", NotifGui);
 Container.Name = "Container";
 Container.Position = UDim2.new(0, 20, 0, 20); -- Update this line to position the Container at the top left corner
 Container.Size = UDim2.new(0, 300, 0, 0.5); -- You might also want to adjust the size accordingly
 Container.BackgroundTransparency = 1;
+Container.BackgroundColor3 = Color3.fromRGB(30, 30, 30); -- Dark gray color
 Container.Parent = NotifGui;
 
 local function Image(ID, Button)
