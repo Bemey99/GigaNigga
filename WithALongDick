@@ -5,7 +5,7 @@ local TextService = game:GetService("TextService");
 local Player = game:GetService("Players").LocalPlayer;
 
 local NotifGui = Instance.new("ScreenGui");
-NotifGui.Name = "AbyssNotif";
+NotifGui.Name = "SUPERGYAT";
 NotifGui.Parent = RunService:IsStudio() and Player.PlayerGui or game:GetService("CoreGui");
 
 local Container = Instance.new("Frame", NotifGui);
